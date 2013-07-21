@@ -1,0 +1,40 @@
+
+
+
+
+
+/*
+     FILE ARCHIVED ON 19:01:10 Feb 2, 2011 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 9:21:20 Jul 21, 2013.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+var b_txt = '';
+
+// write the badge
+	
+	
+		 	 		
+	b_txt+= '<div class="flickr_badge_image" id="flickr_badge_image1"><a href="/web/20110202190110/http://www.flickr.com/photos/dave_c/3243933160/"><img src="/web/20110202190110/http://farm4.static.flickr.com/3472/3243933160_40db11474f_s.jpg" alt="A photo on Flickr" title="iFlickr" height="75" width="75"></a></div>';
+	
+		 	 		
+	b_txt+= '<div class="flickr_badge_image" id="flickr_badge_image2"><a href="/web/20110202190110/http://www.flickr.com/photos/dave_c/3224165127/"><img src="/web/20110202190110/http://farm4.static.flickr.com/3479/3224165127_00bbdd3952_s.jpg" alt="A photo on Flickr" title="iFlickr" height="75" width="75"></a></div>';
+	
+		 	 		
+	b_txt+= '<div class="flickr_badge_image" id="flickr_badge_image3"><a href="/web/20110202190110/http://www.flickr.com/photos/dave_c/3134413630/"><img src="/web/20110202190110/http://farm4.static.flickr.com/3079/3134413630_c490518d47_s.jpg" alt="A photo on Flickr" title="iFlickr" height="75" width="75"></a></div>';
+	
+		 	 		
+	b_txt+= '<div class="flickr_badge_image" id="flickr_badge_image4"><a href="/web/20110202190110/http://www.flickr.com/photos/dave_c/3133586919/"><img src="/web/20110202190110/http://farm4.static.flickr.com/3109/3133586919_6006fae011_s.jpg" alt="A photo on Flickr" title="iFlickr" height="75" width="75"></a></div>';
+	
+		 	 		
+	b_txt+= '<div class="flickr_badge_image" id="flickr_badge_image5"><a href="/web/20110202190110/http://www.flickr.com/photos/dave_c/3134406754/"><img src="/web/20110202190110/http://farm4.static.flickr.com/3259/3134406754_cb777b702f_s.jpg" alt="A photo on Flickr" title="iFlickr" height="75" width="75"></a></div>';
+	
+		 	 		
+	b_txt+= '<div class="flickr_badge_image" id="flickr_badge_image6"><a href="/web/20110202190110/http://www.flickr.com/photos/dave_c/2547010805/"><img src="/web/20110202190110/http://farm4.static.flickr.com/3015/2547010805_a6ffe22112_s.jpg" alt="A photo on Flickr" title="iFlickr" height="75" width="75"></a></div>';
+
+
+b_txt += '<span style="position:absolute;left:-999em;top:-999em;visibility:hidden" class="flickr_badge_beacon"><img src="/web/20110202190110/http://geo.yahoo.com/p?s=792600102&t=de5557a8707f2e3adf26266de11accca&r=http%3A%2F%2Fdavidpetrie.com%2F&fl_ev=0&lang=en&intl=us" width="0" height="0" alt="" /></span>';
+
+document.write(b_txt);

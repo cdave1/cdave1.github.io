@@ -1,0 +1,444 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0065)http://davidpetrie.com/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+
+<title>davidpetrie.com | </title>
+
+<link rel="stylesheet" type="text/css" href="./index_files/style.css">
+
+<!--[if IE 6]>
+<script type="text/javascript" src="/web/20101224223512/http://davidpetrie.com/wp-content/themes/typebased/includes/js/menu.js"></script>
+<![endif]-->	
+
+<script type="text/javascript" src="./index_files/jquery.js"></script>
+<script type="text/javascript" src="./index_files/superfish.js"></script>
+
+<link rel="index" title="davidpetrie.com" href="./index_files/davidpetrie.com  .html">
+<meta name="generator" content="WordPress 3.0">
+<meta name="generator" content="Typebased 2.2.1">
+<meta name="generator" content="Woo Framework Version 2.7.20">
+<link href="./index_files/grey.css" rel="stylesheet" type="text/css">
+<link href="./index_files/custom.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+
+<div id="container">
+
+	<div id="header">
+		<h1>
+			<a href="http://davidpetrie.com/" title="">
+			<img src="./index_files/logo1.png" style="margin-top:0px;" "="" alt="davidpetrie.com"></a></h1>
+	</div>
+
+
+	<div id="menu">
+		<ul id="navigation" class="nav wrap">
+      <li class="page_item first"><a href="index.html"><span>Home</span></a></li>
+      <li class="page_item page-item-217"><a href="about.html" title="About"><span>About</span></a></li>
+      <li class="page_item page-item-101"><a href="projects.html" title="Projects"><span>Projects</span></a></li>
+      <li class="page_item page-item-249"><a href="art.html" title="Art"><span>Art</span></a></li>
+    </ul>
+	</div>
+
+	<div class="wrap background">
+		
+		<div id="content" class="left-col wrap">
+		
+						
+		<!--- Post Starts -->
+		
+			<div class="post wrap">
+			
+				<div class="post-meta left-col">
+					<h3 class="wrap"><span class="month">Nov<span class="year">2010</span></span><span class="day">18</span></h3>
+					<h4 class="author"><a href="http://davidpetrie.com/?author=1" title="Posts by admin">admin</a></h4>
+					<h4 class="comments"><a href="http://davidpetrie.com/?p=303#comments">0</a></h4>
+				</div>
+				
+				<div class="post-content right-col">
+					<h2><a href="http://davidpetrie.com/?p=303" rel="bookmark" title="Codename “Tango”: A WYSIWIG interface builder for OpenGL apps">Codename “Tango”: A WYSIWIG interface builder for OpenGL apps</a></h2>
+					
+										
+					<p>Here’s a screenshot of a side project I’ve been working on.  It’s a WYSIWIG interface editor for OpenGL apps (soon to include HTML 5 and WebGL), which I’ve codenamed “Tango”.  </p>
+<p>Tango is intended to be used for making HUDs and menus for games, although I guess it could be used for making other kinds of apps.  I haven’t decided whether to completely open source it, or just keep it to myself.</p>
+<p><a href="http://davidpetrie.com/wp-content/uploads/2010/11/Screen-shot-2010-11-19-at-10.12.41-AM.png"><img src="./index_files/Screen-shot-2010-11-19-at-10.12.41-AM-300x168.png" alt="" title="Interface builder, codenamed &quot;Tango&quot;" width="300" height="168" class="alignnone size-medium wp-image-301"></a></p>
+<p>That screenshot looked a lot better when I took it.  I’m kind of embarrassed about how spartan Tango’s interface is!  The interface being edited in the middle of the screenshot is for an <a href="http://www.hackdirt.com/?p=331">up and coming iPad game</a>.</p>
+<p>Anyway, Tango currently allows you to do a very limited number of things, but it does them fairly well.  You can quickly build up interfaces with a combination of buttons, labels, switches, and images.  You just drag out the size of the interface element you want with your mouse.  You can move/scale/rotate/stretch things.  To use the interface in a game, you just load the interface file, assign button callbacks, and call the draw function in your render loop.</p>
+<p>So Tango sounds good, right? Yeah, uhhm, not really. It’s still incredibly buggy. There are a number of half-baked features I need to either finish or remove before I release any code to the public.  For example, the font system does not currently support Truetype fonts, despite the fact that I have a <a href="https://github.com/cdave1/ftgles">perfectly good font rendering library</a> just sitting there. Instead, the font system uses an implementation of “FluidFonts”, a kind of fixed-size bitmapped font file format.  You need to create these font files using a windows tool — very tedious.   The animation system supports keyframes, bezier-paths, timing curves, alpha variance, and per-frame function callbacks, but there’s no interface for it, so all that functionality is unavailable.  </p>
+<p>Also, I’ve gone with Lua as the scripting language, but I don’t think Lua is the right approach.  I’m debating chucking Lua out and replacing it with JavaScript in combination with some kind of V8 JIT compiler, but I’m not even sure if this is possible.  JS will certainly make it easier to support HTML5.</p>
+<p>Tango has no undo support either; instead it simply makes a hidden backup of the file when you save.  This backup system is useful, because the program crashes, frequently.</p>
+<p>Still, <a href="http://davidpetrie.com/?page_id=217">please contact me</a> if you want to try out an ad hoc, informally-specified, bug-ridden, slow implementation of one-eighth of the first version of Flash.  Be good to know if there is any interest for this sort of thing.</p>
+					
+				</div>
+				
+			</div>
+			
+			<!--- Post Ends -->
+			
+					
+		<!--- Post Starts -->
+		
+			<div class="post wrap">
+			
+				<div class="post-meta left-col">
+					<h3 class="wrap"><span class="month">Jun<span class="year">2010</span></span><span class="day">18</span></h3>
+					<h4 class="author"><a href="http://davidpetrie.com/?author=1" title="Posts by admin">admin</a></h4>
+					<h4 class="comments"><a href="http://davidpetrie.com/?p=286#comments">0</a></h4>
+				</div>
+				
+				<div class="post-content right-col">
+					<h2><a href="http://davidpetrie.com/?p=286" rel="bookmark" title="New theme, new server">New theme, new server</a></h2>
+					
+										
+					<p>Shifted over to Slicehost. There aren’t really many decent personal blog themes on woothemes, so I’ve opted for a free one for now.</p>
+					
+				</div>
+				
+			</div>
+			
+			<!--- Post Ends -->
+			
+					
+		<!--- Post Starts -->
+		
+			<div class="post wrap">
+			
+				<div class="post-meta left-col">
+					<h3 class="wrap"><span class="month">Apr<span class="year">2010</span></span><span class="day">14</span></h3>
+					<h4 class="author"><a href="http://davidpetrie.com/?author=2" title="Posts by david">david</a></h4>
+					<h4 class="comments"><a href="http://davidpetrie.com/?p=275#comments">1</a></h4>
+				</div>
+				
+				<div class="post-content right-col">
+					<h2><a href="http://davidpetrie.com/?p=275" rel="bookmark" title="FTGLES Update (or, truetype fonts for OpenGL ES)">FTGLES Update (or, truetype fonts for OpenGL ES)</a></h2>
+					
+										
+					<p>FTLGES on github: <a href="http://github.com/cdave1/ftgles">http://github.com/cdave1/ftgles</a></p>
+<p><img src="./index_files/IMG_0278.jpg" alt="FTGLES on iPod Touch" title="FTGLES on iPod Touch" width="205" height="300" class="alignnone size-medium wp-image-280"></p>
+<p>I’ve been working on a library called FTGLES, which is an open source truetype font rendering library for OpenGL ES 1.1. FTGLES is a port of <a href="http://homepages.paradise.net.nz/henryj/code/#FTGL">FTGL</a>, a library originally written by <a href="http://homepages.paradise.net.nz/henryj/index.html">Henry Maddocks</a> and a number of other contributors.</p>
+<p>Earlier versions of the FTGLES library, originally hosted on <a href="http://code.google.com/p/ftgles/">googlecode</a>, were horribly buggy. OpenGL ES is essentially a stripped down version of OpenGL. To get FTGL working on OpenGL ES, I had to rip out all the old OpenGL calls in FTGL and replace them with a sort of internal “glue” layer that maintained its own internal vertex, texture, and colour buffer arrays. Most of the nasty bugs were caused by the glue layer not restoring client states or buffer arrays properly, and I was repeatedly getting emails from people saying that seemingly unrelated feature x or feature y was crashing their app. I received a number of patches that <em>kinda</em> solved these problems, but they did not quite solve the problems in a way that would work for all users.</p>
+<p>I’ve now gone through the library and fixed the these bugs. This updated version will properly restore all previous array and client states. I’ve removed the need to call <code>ftglInitImmediateModeGL()</code> before rendering your fonts. I’ve also added support for polygon font rendering.</p>
+<p>Performance is slightly better on this update, but I’m still not quite happy with it. There are always significant performance constraints on mobile operating systems so it’s always going to be a fight to get decent performance. The library will render texture fonts without too much fuss, but polygon fonts should be used sparingly. Unfortunately, OpenGL ES does not allow pixels to be rendered directly to the framebuffer, so the ultra-fast FTPixmap type is still not available. I’m working on a separate type that mimics the behavior of this class by rendering glyphs to single texture, precalculating the glyph texture coordinates, and then using this single texture to render the font so <code>glBindTexture(GL_TEXTURE_2D, handle)</code> does not need to be called for each and every glyph.</p>
+<p>The project has now been shifted to github, so if you are interested <a href="http://github.com/cdave1/ftgles">you should download/clone it from here</a>. I should point out the contributions made by James Long, who did a <a href="http://jlongster.com/blog/2010/02/08/fonts-ugh/">great writeup on the library here</a>. He re-instated the automake files, among other things, that I removed from the earlier googlecode version for some stupid reason.</p>
+<p>The source code contains a number of demos for the iPhone. I’m hoping to provide demos for the iPad, but the most important thing now is to get a version working on the Android operating system. Here is a screenshot of one of the iPhone demos:</p>
+<p><img src="./index_files/Screen-shot-2010-04-14-at-8.26.37-AM.png" alt="FTGLES screenshot on iPhone" title="FTGLES screenshot on iPhone" width="320" height="480" class="alignnone size-full wp-image-277"></p>
+					
+				</div>
+				
+			</div>
+			
+			<!--- Post Ends -->
+			
+					
+		<!--- Post Starts -->
+		
+			<div class="post wrap">
+			
+				<div class="post-meta left-col">
+					<h3 class="wrap"><span class="month">Nov<span class="year">2009</span></span><span class="day">09</span></h3>
+					<h4 class="author"><a href="http://davidpetrie.com/?author=2" title="Posts by david">david</a></h4>
+					<h4 class="comments"><a href="http://davidpetrie.com/?p=246#comments">2</a></h4>
+				</div>
+				
+				<div class="post-content right-col">
+					<h2><a href="http://davidpetrie.com/?p=246" rel="bookmark" title="A game I&#39;m working on…">A game I'm working on…</a></h2>
+					
+										
+					<p>Here’s two gameplay trailers for a game I’m working on for the iPhone:</p>
+<p><object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/RWWLVXcL8FY&amp;hl=en&amp;fs=1&amp;"><param name="allowFullScreen" value="true"><param name="allowscriptaccess" value="always"><embed src="/web/20101224223512oe_/http://www.youtube.com/v/RWWLVXcL8FY&amp;hl=en&amp;fs=1&amp;" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></object></p>
+<p><object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/yp9dSbFhNR8&amp;hl=en&amp;fs=1&amp;"><param name="allowFullScreen" value="true"><param name="allowscriptaccess" value="always"><embed src="/web/20101224223512oe_/http://www.youtube.com/v/yp9dSbFhNR8&amp;hl=en&amp;fs=1&amp;" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></object></p>
+<p>You can find out more about the game <a href="http://www.hackdirt.com/">here</a>.</p>
+					
+				</div>
+				
+			</div>
+			
+			<!--- Post Ends -->
+			
+					
+		<!--- Post Starts -->
+		
+			<div class="post wrap">
+			
+				<div class="post-meta left-col">
+					<h3 class="wrap"><span class="month">Sep<span class="year">2009</span></span><span class="day">07</span></h3>
+					<h4 class="author"><a href="http://davidpetrie.com/?author=2" title="Posts by david">david</a></h4>
+					<h4 class="comments"><a href="http://davidpetrie.com/?p=233#comments">0</a></h4>
+				</div>
+				
+				<div class="post-content right-col">
+					<h2><a href="http://davidpetrie.com/?p=233" rel="bookmark" title="Digital Painting">Digital Painting</a></h2>
+					
+										
+					<p>I’ve been doing some digital painting. If you don’t know what that means, “digital painting” is just painting using your computer, usually with a program like Photoshop and a <a href="http://www.wacom-asia.com/intuos4">tablet</a>.</p>
+<p>These particular paintings are depictions of characters in my <a href="http://www.hackdirt.com/">upcoming game</a>. I’m quite new to digital painting and there are still a few techniques I suck at. I still haven’t worked out how to do hair properly, and generally find ears to be impossible to get right. Despite this, I’m pretty happy with how it’s turning out. Check ‘em out:</p>
+<p><a href="http://www.davidpetrie.com/files/Painting/sep032009_chick.jpg"><img src="./index_files/sep032009_chick.jpg" width="200px"></a><br>
+<br>
+<a href="http://www.davidpetrie.com/files/Painting/sep012009_bluecollar.jpg"><img src="./index_files/sep012009_bluecollar.jpg" width="200px"></a><br>
+<br>
+<a href="http://www.davidpetrie.com/files/Painting/sep062009_model.jpg"><img src="./index_files/sep062009_model.jpg" width="200px"></a></p>
+<p>There’s a great digital painting tutorial <a href="http://dianae.deviantart.com/art/Digital-Painting-Tutorial-74468761">here</a>, in case you’re interested in getting into this.</p>
+					
+				</div>
+				
+			</div>
+			
+			<!--- Post Ends -->
+			
+					
+		<!--- Post Starts -->
+		
+			<div class="post wrap">
+			
+				<div class="post-meta left-col">
+					<h3 class="wrap"><span class="month">Aug<span class="year">2009</span></span><span class="day">31</span></h3>
+					<h4 class="author"><a href="http://davidpetrie.com/?author=2" title="Posts by david">david</a></h4>
+					<h4 class="comments"><a href="http://davidpetrie.com/?p=221#comments">0</a></h4>
+				</div>
+				
+				<div class="post-content right-col">
+					<h2><a href="http://davidpetrie.com/?p=221" rel="bookmark" title="New Software Startup">New Software Startup</a></h2>
+					
+										
+					<p>The website is <a href="http://www.hackdirt.com/">here</a>.</p>
+<p>We’re currently working on iPhone games.</p>
+<p>And I really should post here more often…</p>
+					
+				</div>
+				
+			</div>
+			
+			<!--- Post Ends -->
+			
+					
+		<!--- Post Starts -->
+		
+			<div class="post wrap">
+			
+				<div class="post-meta left-col">
+					<h3 class="wrap"><span class="month">Jan<span class="year">2009</span></span><span class="day">27</span></h3>
+					<h4 class="author"><a href="http://davidpetrie.com/?author=2" title="Posts by david">david</a></h4>
+					<h4 class="comments"><a href="http://davidpetrie.com/?p=219#comments">0</a></h4>
+				</div>
+				
+				<div class="post-content right-col">
+					<h2><a href="http://davidpetrie.com/?p=219" rel="bookmark" title="Bloody hell">Bloody hell</a></h2>
+					
+										
+					<p>Too many video posts showing that I don’t really have a lot to say at the moment. I’m currently deep in a cocoon-like state working on an iPhone game after spending most of last year working for a <a href="http://www.learningsource.co.nz/" target="_blank">startup</a> here in Wellington.</p>
+<p>On that note, Wellington dev&nbsp;<a href="http://ims.co.nz/">Tim Haines</a> has set up a database for iPhone devs around the world <a href="http://spreadsheets.google.com/ccc?key=p3LA_Q08eM-VAAyq03ZSjYQ">here</a>. Add your name on <a href="http://is.gd/hlhv">this form</a>.</p>
+					
+				</div>
+				
+			</div>
+			
+			<!--- Post Ends -->
+			
+					
+		<!--- Post Starts -->
+		
+			<div class="post wrap">
+			
+				<div class="post-meta left-col">
+					<h3 class="wrap"><span class="month">Jan<span class="year">2009</span></span><span class="day">07</span></h3>
+					<h4 class="author"><a href="http://davidpetrie.com/?author=2" title="Posts by david">david</a></h4>
+					<h4 class="comments"><a href="http://davidpetrie.com/?p=218#comments">1</a></h4>
+				</div>
+				
+				<div class="post-content right-col">
+					<h2><a href="http://davidpetrie.com/?p=218" rel="bookmark" title="Demoscene Vids">Demoscene Vids</a></h2>
+					
+										
+					<p>Couple of recent demo productions I was sent:</p>
+<p><object width="480" height="295"><param name="movie" value="http://www.youtube.com/v/CRaVuKE5DcI&amp;hl=en&amp;fs=1"><param name="allowFullScreen" value="true"><param name="allowscriptaccess" value="always"><embed src="/web/20101224223512oe_/http://www.youtube.com/v/CRaVuKE5DcI&amp;hl=en&amp;fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="295"></object></p>
+<p><object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/Q2bq-3L3r7k&amp;hl=en&amp;fs=1"><param name="allowFullScreen" value="true"><param name="allowscriptaccess" value="always"><embed src="/web/20101224223512oe_/http://www.youtube.com/v/Q2bq-3L3r7k&amp;hl=en&amp;fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></object></p>
+					
+				</div>
+				
+			</div>
+			
+			<!--- Post Ends -->
+			
+					
+		<!--- Post Starts -->
+		
+			<div class="post wrap">
+			
+				<div class="post-meta left-col">
+					<h3 class="wrap"><span class="month">Dec<span class="year">2008</span></span><span class="day">19</span></h3>
+					<h4 class="author"><a href="http://davidpetrie.com/?author=2" title="Posts by david">david</a></h4>
+					<h4 class="comments"><a href="http://davidpetrie.com/?p=214#comments">2</a></h4>
+				</div>
+				
+				<div class="post-content right-col">
+					<h2><a href="http://davidpetrie.com/?p=214" rel="bookmark" title="Dan Gilbert: Exploring the frontiers of happiness">Dan Gilbert: Exploring the frontiers of happiness</a></h2>
+					
+										
+					<p><object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/c-4flnuxNV4&amp;hl=en&amp;fs=1"><param name="allowFullScreen" value="true"><param name="allowscriptaccess" value="always"><embed src="/web/20101224223512oe_/http://www.youtube.com/v/c-4flnuxNV4&amp;hl=en&amp;fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></object></p>
+					
+				</div>
+				
+			</div>
+			
+			<!--- Post Ends -->
+			
+					
+		<!--- Post Starts -->
+		
+			<div class="post wrap">
+			
+				<div class="post-meta left-col">
+					<h3 class="wrap"><span class="month">Dec<span class="year">2008</span></span><span class="day">17</span></h3>
+					<h4 class="author"><a href="http://davidpetrie.com/?author=2" title="Posts by david">david</a></h4>
+					<h4 class="comments"><a href="http://davidpetrie.com/?p=205#comments">0</a></h4>
+				</div>
+				
+				<div class="post-content right-col">
+					<h2><a href="http://davidpetrie.com/?p=205" rel="bookmark" title="I don&#39;t remember going to any drum &#39;n bass gigs like this">I don't remember going to any drum 'n bass gigs like this</a></h2>
+					
+										
+					<p><object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/5_JmXCNPs6Y&amp;hl=en&amp;fs=1"><param name="allowFullScreen" value="true"><param name="allowscriptaccess" value="always"><embed src="/web/20101224223512oe_/http://www.youtube.com/v/5_JmXCNPs6Y&amp;hl=en&amp;fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></object></p>
+<p><object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/zUDTq7cAqR0&amp;hl=en&amp;fs=1"><param name="allowFullScreen" value="true"><param name="allowscriptaccess" value="always"><embed src="/web/20101224223512oe_/http://www.youtube.com/v/zUDTq7cAqR0&amp;hl=en&amp;fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></object></p>
+<p>More <a href="http://uk.youtube.com/profile?user=airloaf&view=videos">here</a>.</p>
+					
+				</div>
+				
+			</div>
+			
+			<!--- Post Ends -->
+			
+						
+			<div class="more_posts">
+				<h2><a href="http://davidpetrie.com/?paged=2">« Older Entries</a> &nbsp; </h2>
+			</div>
+			
+						
+		</div>
+		
+				<!--- Sidebar Starts -->
+		
+		<div id="sidebar" class="right-col">
+		
+			<div id="search">
+				<form method="get" id="searchform" action="./index_files/davidpetrie.com  .html">
+					<div>
+						<input type="text" class="search_box" name="s" id="s">
+						<input type="image" src="./index_files/search.gif" class="submit" name="submit">
+					</div>
+				</form>
+			</div>
+						
+			<div id="sidebar_in">
+			
+			<div id="pages-3" class="block widget widget_pages"><h2>Pages</h2>		<ul>
+			<li class="page_item page-item-217"><a href="http://davidpetrie.com/?page_id=217" title="About">About</a></li>
+<li class="page_item page-item-249"><a href="http://davidpetrie.com/?page_id=249" title="Art">Art</a></li>
+<li class="page_item page-item-101"><a href="http://davidpetrie.com/?page_id=101" title="Projects">Projects</a></li>
+		</ul>
+		</div><div id="rss-3" class="block widget widget_rss"><h2><a class="rsswidget" href="http://feeds.pinboard.in/rss/u:davidppp" title="Syndicate this content"><img style="border:0" width="14" height="14" src="./index_files/rss.png" alt="RSS"></a> <a class="rsswidget" href="http://pinboard.in/u%3Adavidppp" title="recent bookmarks from davidppp">pinboard</a></h2><ul><li><a class="rsswidget" href="http://www.4colorrebellion.com/archives/2010/12/20/4cr-interviews-that-game-company/" title=" […]">4cr Interviews: That Game Company | 4 color rebellion</a></li><li><a class="rsswidget" href="http://notanumber.net/archives/54/underhanded-c-the-leaky-redaction" title=" […]">Underhanded C: The Leaky Redaction | Not A Number</a></li><li><a class="rsswidget" href="http://marijnhaverbeke.nl/js1k/" title=" […]">Bouncing Beholder [JS1k entry]</a></li><li><a class="rsswidget" href="http://js1k.com/2010-first/demo/738" title="ambient occlusion ray marching […]">JS1k, 1k demo submission [738]</a></li><li><a class="rsswidget" href="http://js1k.com/2010-first/demo/755" title=" […]">JS1k, 1k demo submission [755]</a></li><li><a class="rsswidget" href="http://mrl.nyu.edu/~perlin/demox/Planet.html" title=" […]">A Webwide World by Ken Perlin, NYU, 1998</a></li><li><a class="rsswidget" href="http://code.google.com/p/tesseract-ocr/" title=" […]">tesseract-ocr - Project Hosting on Google Code</a></li><li><a class="rsswidget" href="http://www.nzmusician.co.nz/index.php/ps_pagename/obpost/pi_obpostid/149" title=" […]">Observation Post | NZ Musician | New Zealand Music Magazine</a></li><li><a class="rsswidget" href="http://www.guardian.co.uk/music/2010/nov/28/alex-ross-modern-classical-music" title=" […]">Why do we hate modern classical music? | Alex Ross | Music | The Guardian</a></li><li><a class="rsswidget" href="http://www.cityofsound.com/blog/2010/10/aalto-finlandia.html" title=" […]">cityofsound: Finlandia: the greatest architectural mistake ever made? Aalto's benign errors</a></li></ul></div><div id="rss-4" class="block widget widget_rss"><h2><a class="rsswidget" href="http://twitter.com/statuses/user_timeline/2794131.rss" title="Syndicate this content"><img style="border:0" width="14" height="14" src="./index_files/rss.png" alt="RSS"></a> <a class="rsswidget" href="http://twitter.com/davidppp" title="Twitter updates from David Petrie / davidppp.">Twitter Latest</a></h2><ul><li><a class="rsswidget" href="http://twitter.com/davidppp/statuses/18008348062388224" title="davidppp: Wow paypal, you&#39;re so rapid and efficient at paying me all of a sudden. […]">davidppp: Wow paypal, you're so rapid and efficient at paying me all of a sudden.</a> <span class="rss-date">December 23, 2010</span></li></ul></div><div id="archives-3" class="block widget widget_archive"><h2>Archives</h2>		<ul>
+			<li><a href="http://davidpetrie.com/?m=201011" title="November 2010">November 2010</a></li>
+	<li><a href="http://davidpetrie.com/?m=201006" title="June 2010">June 2010</a></li>
+	<li><a href="http://davidpetrie.com/?m=201004" title="April 2010">April 2010</a></li>
+	<li><a href="http://davidpetrie.com/?m=200911" title="November 2009">November 2009</a></li>
+	<li><a href="http://davidpetrie.com/?m=200909" title="September 2009">September 2009</a></li>
+	<li><a href="http://davidpetrie.com/?m=200908" title="August 2009">August 2009</a></li>
+	<li><a href="http://davidpetrie.com/?m=200901" title="January 2009">January 2009</a></li>
+	<li><a href="http://davidpetrie.com/?m=200812" title="December 2008">December 2008</a></li>
+	<li><a href="http://davidpetrie.com/?m=200810" title="October 2008">October 2008</a></li>
+	<li><a href="http://davidpetrie.com/?m=200809" title="September 2008">September 2008</a></li>
+	<li><a href="http://davidpetrie.com/?m=200804" title="April 2008">April 2008</a></li>
+	<li><a href="http://davidpetrie.com/?m=200803" title="March 2008">March 2008</a></li>
+	<li><a href="http://davidpetrie.com/?m=200802" title="February 2008">February 2008</a></li>
+	<li><a href="http://davidpetrie.com/?m=200801" title="January 2008">January 2008</a></li>
+	<li><a href="http://davidpetrie.com/?m=200709" title="September 2007">September 2007</a></li>
+	<li><a href="http://davidpetrie.com/?m=200708" title="August 2007">August 2007</a></li>
+	<li><a href="http://davidpetrie.com/?m=200707" title="July 2007">July 2007</a></li>
+	<li><a href="http://davidpetrie.com/?m=200706" title="June 2007">June 2007</a></li>
+	<li><a href="http://davidpetrie.com/?m=200705" title="May 2007">May 2007</a></li>
+	<li><a href="http://davidpetrie.com/?m=200704" title="April 2007">April 2007</a></li>
+	<li><a href="http://davidpetrie.com/?m=200703" title="March 2007">March 2007</a></li>
+	<li><a href="http://davidpetrie.com/?m=200611" title="November 2006">November 2006</a></li>
+	<li><a href="http://davidpetrie.com/?m=200604" title="April 2006">April 2006</a></li>
+	<li><a href="http://davidpetrie.com/?m=200603" title="March 2006">March 2006</a></li>
+	<li><a href="http://davidpetrie.com/?m=200602" title="February 2006">February 2006</a></li>
+	<li><a href="http://davidpetrie.com/?m=200601" title="January 2006">January 2006</a></li>
+	<li><a href="http://davidpetrie.com/?m=200512" title="December 2005">December 2005</a></li>
+	<li><a href="http://davidpetrie.com/?m=200511" title="November 2005">November 2005</a></li>
+	<li><a href="http://davidpetrie.com/?m=200508" title="August 2005">August 2005</a></li>
+	<li><a href="http://davidpetrie.com/?m=200507" title="July 2005">July 2005</a></li>
+	<li><a href="http://davidpetrie.com/?m=200506" title="June 2005">June 2005</a></li>
+	<li><a href="http://davidpetrie.com/?m=200504" title="April 2005">April 2005</a></li>
+	<li><a href="http://davidpetrie.com/?m=200503" title="March 2005">March 2005</a></li>
+		</ul>
+</div><div class="block flickr">
+    <h2>Photos on <span>flick<span>r</span></span></h2>
+    <div class="wrap">
+		<script type="text/javascript" src="./index_files/badge_code_v2.gne"></script><div class="flickr_badge_image" id="flickr_badge_image1"><a href="http://web.archive.org/web/20110202190110/http://www.flickr.com/photos/dave_c/3243933160/"><img src="./index_files/3243933160_40db11474f_s.jpg" alt="A photo on Flickr" title="iFlickr" height="75" width="75"></a></div><div class="flickr_badge_image" id="flickr_badge_image2"><a href="http://web.archive.org/web/20110202190110/http://www.flickr.com/photos/dave_c/3224165127/"><img src="./index_files/3224165127_00bbdd3952_s.jpg" alt="A photo on Flickr" title="iFlickr" height="75" width="75"></a></div><div class="flickr_badge_image" id="flickr_badge_image3"><a href="http://web.archive.org/web/20110202190110/http://www.flickr.com/photos/dave_c/3134413630/"><img src="./index_files/3134413630_c490518d47_s.jpg" alt="A photo on Flickr" title="iFlickr" height="75" width="75"></a></div><div class="flickr_badge_image" id="flickr_badge_image4"><a href="http://web.archive.org/web/20110202190110/http://www.flickr.com/photos/dave_c/3133586919/"><img src="./index_files/3133586919_6006fae011_s.jpg" alt="A photo on Flickr" title="iFlickr" height="75" width="75"></a></div><div class="flickr_badge_image" id="flickr_badge_image5"><a href="http://web.archive.org/web/20110202190110/http://www.flickr.com/photos/dave_c/3134406754/"><img src="./index_files/3134406754_cb777b702f_s.jpg" alt="A photo on Flickr" title="iFlickr" height="75" width="75"></a></div><div class="flickr_badge_image" id="flickr_badge_image6"><a href="http://web.archive.org/web/20110202190110/http://www.flickr.com/photos/dave_c/2547010805/"><img src="./index_files/2547010805_a6ffe22112_s.jpg" alt="A photo on Flickr" title="iFlickr" height="75" width="75"></a></div><span style="position:absolute;left:-999em;top:-999em;visibility:hidden" class="flickr_badge_beacon"><img src="./index_files/p" width="0" height="0" alt=""></span>        
+    </div>
+</div>
+<div class="fix"></div>
+
+			
+			</div>
+				
+		</div>
+		
+		<!--- Sidebar Ends -->		
+	</div>
+	
+</div>
+	
+<div id="footer" class="wrap">
+
+	<div class="left-col">
+		<div class="popular wrap">
+			<h2>Most Popular Articles</h2>
+			<ul>
+                <!-- Gets the posts with the most comments -->
+				<li><a href="http://davidpetrie.com/?p=92" title="Woosh Wireless Sucks">Woosh Wireless Sucks</a></li><li><a href="http://davidpetrie.com/?p=26" title="Original Content Distribution">Original Content Distribution</a></li><li><a href="http://davidpetrie.com/?p=104" title="Ideas I Would Want to Invest In (if I had the cash)">Ideas I Would Want to Invest In (if I had the cash)</a></li><li><a href="http://davidpetrie.com/?p=158" title="The Pure Awesome That Is Ronald Jenkees">The Pure Awesome That Is Ronald Jenkees</a></li><li><a href="http://davidpetrie.com/?p=214" title="Dan Gilbert: Exploring the frontiers of happiness">Dan Gilbert: Exploring the frontiers of happiness</a></li>                    
+			</ul>
+		</div>
+	</div>
+	
+	<div id="subscribe" class="right-col">
+		<h2>Subscribe to RSS</h2>
+		<p class="rss">If you enjoyed the post, make sure you subscribe to the RSS feed.</p>
+		<p>
+		<a href="http://davidpetrie.com/?feed=rss2">Articles</a><br>
+		<a href="http://davidpetrie.com/?feed=comments-rss2">Comments</a>
+		</p>
+	</div>
+	
+<div id="copyright" class="wrap">
+
+	<div class="left-col">
+		<p>© 2010</p>
+	</div>
+	
+	<div class="right-col">
+		<p>Powered by WordPress. Design by <a href="http://woothemes.com/"><img src="./index_files/logo-footer.jpg" width="87" height="21" alt="woo themes"></a></p>
+	</div>
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 22:35:12 Dec 24, 2010 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 9:23:36 Jul 21, 2013.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+</body></html>
