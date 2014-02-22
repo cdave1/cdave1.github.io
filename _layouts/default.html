@@ -26,19 +26,19 @@
           <a class="pure-menu-heading" href="/">David Petrie</a>
 
           <ul>
-              <li class=" ">
+              <li {% if page.name == 'home' %}class=" pure-menu-selected"{% endif %}>
                   <a href="/">Home</a>
               </li>
             
-              <li class=" ">
+              <li {% if page.name == 'about' %}class=" pure-menu-selected"{% endif %}>
                   <a href="/about.html">About</a>
               </li>
 
-              <li class=" ">
+              <li {% if page.name == 'projects' %}class=" pure-menu-selected"{% endif %}>
                   <a href="/projects.html">Projects</a>
               </li>
             
-              <li class=" ">
+              <li {% if page.name == 'contact' %}class=" pure-menu-selected"{% endif %}>
                   <a href="/contact.html">Contact</a>
               </li>
             
