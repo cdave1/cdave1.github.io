@@ -1121,12 +1121,12 @@ code {
 }
 
 #layout.active .menu-link {
-    left: 160px;
+    left: 200px;
 }
 
 #menu {
-    margin-left: -160px; /* "#menu" width */
-    width: 160px;
+    margin-left: -200px; /* "#menu" width */
+    width: 200px;
     position: fixed;
     top: 0;
     left: 0;
@@ -1355,19 +1355,19 @@ a.pure-button-primary {
 @media (min-width: 58em) {
 
     #layout {
-        padding-left: 160px; /* left col width "#menu" */
+        padding-left: 200px; /* left col width "#menu" */
         left: 0;
     }
     #menu {
-        left: 160px;
+        left: 200px;
     }
     .menu-link {
         position: fixed;
-        left: 160px;
+        left: 200px;
         display: none;
     }
     #layout.active .menu-link {
-        left: 160px;
+        left: 200px;
     }
 
 }
