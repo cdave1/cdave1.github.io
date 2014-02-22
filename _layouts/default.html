@@ -24,21 +24,21 @@
   <div id="menu">
       <div class="pure-menu pure-menu-open">
           <a class="pure-menu-heading" href="/">David Petrie</a>
-          
+
           <ul>
-              <li {% if page.name == 'home' %}class=" pure-menu-selected"{% endif %}>
-                  <a href="/">Home</a>{{page.name}}
+              <li {% if page.tab-name == 'home' %}class=" pure-menu-selected"{% endif %}>
+                  <a href="/">Home</a>{{page.tab-name}}
               </li>
             
-              <li {% if page.name == 'about' %}class=" pure-menu-selected"{% endif %}>
+              <li {% if page.tab-name == 'about' %}class=" pure-menu-selected"{% endif %}>
                   <a href="/about.html">About</a>
               </li>
 
-              <li {% if page.name == 'projects' %}class=" pure-menu-selected"{% endif %}>
+              <li {% if page.tab-name == 'projects' %}class=" pure-menu-selected"{% endif %}>
                   <a href="/projects.html">Projects</a>
               </li>
             
-              <li {% if page.name == 'contact' %}class=" pure-menu-selected"{% endif %}>
+              <li {% if page.tab-name == 'contact' %}class=" pure-menu-selected"{% endif %}>
                   <a href="/contact.html">Contact</a>
               </li>
             
