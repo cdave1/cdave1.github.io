@@ -1,90 +1,68 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <!-- saved from url=(0065)http://davidpetrie.com/ -->
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>davidpetrie.com | {{ page.title }}</title>
-        <meta name="viewport" content="width=device-width">
+  <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>davidpetrie.com | {{ page.title }}</title>
+      <meta name="viewport" content="width=device-width">
 
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/main.css">
-        <link rel="stylesheet" href="/css/syntax.css">
+      <!-- syntax highlighting CSS -->
+      <link rel="stylesheet" href="/css/main.css">
+      <link rel="stylesheet" href="/css/syntax.css">
 
-        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure-min.css">
+      <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure-min.css">
 
-        <script src="http://use.typekit.net/gis6vng.js"></script>
-        <script>
-            try { Typekit.load(); } catch (e) {}
-        </script>
+      <script src="http://use.typekit.net/gis6vng.js"></script>
+      <script>
+          try { Typekit.load(); } catch (e) {}
+      </script>
+  </head>
+  <body>
 
-    </head>
-    <body>
+  <div id="menu">
+      <div class="pure-menu pure-menu-open">
+          <a class="pure-menu-heading" href="/">David Petrie</a>
 
-<div id="menu">
-    <div class="pure-menu pure-menu-open">
-        <a class="pure-menu-heading" href="/">David Petrie</a>
-
-        <ul>
-          
-            <li class=" pure-menu-selected">
-                <a href="/">Home</a>
-            </li>
-          
-            <li class=" ">
-                <a href="/about.html">About</a>
-            </li>
-          
-            <li class=" ">
-                <a href="/contact.html">Contact</a>
-            </li>
-          
-            <li class="menu-item-divided ">
-                <a href="/oldsite/">Old Site</a>
-            </li>
-
-        </ul>
-    </div>
-</div>
-
-
-        <div id="main">
-
+          <ul>
+              <li class=" pure-menu-selected">
+                  <a href="/">Home</a>
+              </li>
             
+              <li class=" ">
+                  <a href="/about.html">About</a>
+              </li>
+            
+              <li class=" ">
+                  <a href="/contact.html">Contact</a>
+              </li>
+            
+              <li class="menu-item-divided ">
+                  <a href="/oldsite/">Old Site</a>
+              </li>
+
+          </ul>
+      </div>
+  </div>
+
+  <div id="main">
+
+    <div class="header">  
+      <h2>David Petrie</h2>
+    </div>
 
 
+    <div class="content">
+      <h2>{{ title }}</h2>
+      {{ content }}
+    </div>
 
-<div class="header">  
-    <h2>David Petrie</h2>
-</div>
+    <div class="footer">
+      <a href="http://github.com/cdave1/">github.com/cdave1</a><br />
+      <a href="http://twitter.com/davidppp/">twitter.com/davidppp</a><br />
+    </div>
+  </div> 
 
-
-<div class="content">
-
-<h2>{{ title }}</h2>
-
-                {{ content }}
-
-</div>
-
-            <div class="footer">
-              <div class="contact">
-                <p>
-                  David Petrie<br />
-                  Founder/CTO <a href="http://www.playcomo.com">PlayCoMo</a><br />
-                  <a href="/about.html">About me</a>
-                </p>
-              </div>
-              <div class="contact">
-                <p>
-                  <a href="http://github.com/cdave1/">github.com/cdave1</a><br />
-                  <a href="http://twitter.com/davidppp/">twitter.com/davidppp</a><br />
-                </p>
-              </div>
-            </div>
-          </div>
-        </div> <!-- /container -->
-
-    </body>
+  </body>
 </html>
