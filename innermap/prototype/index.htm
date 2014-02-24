@@ -138,7 +138,7 @@
             handleLoadedTexture(mudTexture)
         }
 
-        mudTexture.image.src = "http://learningwebgl.com/lessons/lesson10/mud.gif";
+        mudTexture.image.src = "wall.gif";
     }
 
 
@@ -272,7 +272,7 @@
 
     function loadWorld() {
         var request = new XMLHttpRequest();
-        request.open("GET", "http://learningwebgl.com/lessons/lesson10/world.txt");
+        request.open("GET", "world.txt");
         request.onreadystatechange = function () {
             if (request.readyState == 4) {
                 handleLoadedWorld(request.responseText);
