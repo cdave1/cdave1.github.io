@@ -500,11 +500,11 @@
         document.onkeydown = handleKeyDown;
         document.onkeyup = handleKeyUp;
 
-        var t = triangle.triangle(vec.vec(0,10,0), vec.vec(5,10,10), vec.vec(10,10,0));
+        var t = triangle.triangle(vec3.vec(0,10,0), vec3.vec(5,10,10), vec3.vec(10,10,0));
         var r1 = vec3.vec(5,0,5)
         var r2 = vec3.vec(5,1000,5)
 
-        alert(ray_intersects_triangle(t, r1, r2, vec.vec(0,0,0)))
+        alert(ray_intersects_triangle(t, r1, r2, vec3.vec(0,0,0)))
 
         tick();
     }
