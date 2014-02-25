@@ -378,6 +378,13 @@
     };
 
 
+    vec3.prototype.equals = function(rhs) {
+        return (this.values[0] == rhs
+                && this.values[1] == rhs
+                && this.values[2] == rhs);
+    };
+
+
     function triangle(a, b, c) {
         this.vertices = [a, b, c];
     }
@@ -388,8 +395,10 @@
     };
 
 
+    var nullVec3 = new vec3(-999999, -999999, -999999);
+
     // Adapted from algorithm 6 from softsurfer.com
-    function ray_intersects_triangle(triangle, ray_start, ray_end, vout)
+    function ray_intersects_triangle(triangle, ray_start, ray_end)
     {
         var vertices = triangle.vertices;
 
@@ -409,12 +418,14 @@
         
         if (isNaN(b) || Math.abs(b) < 0.0000001)
         {
-            return false;
+            return nullVec3;
         }
         
         // Get intersected point of ray with triangles plane
         var r = a / b;
-        if (r < 0.0) return false;
+        if (r < 0.0) {
+            return nullVec3;
+        }
         
         dir = dir.mult(r);
         vOut = ray_start.add(dir);
@@ -431,10 +442,15 @@
         var s = (uv * wv - vv * wu) / D;
         var t = (uv * wu - uu * wv) / D;
 
-        if (s < 0.0 || s > 1.0) return false;
-        if (t < 0.0 || (s + t) > 1.0) return false;
+        if (s < 0.0 || s > 1.0) {
+            return nullVec3;
+        }
+
+        if (t < 0.0 || (s + t) > 1.0) {
+            return nullVec3;
+        }
         
-        return true;
+        return vOut;
     }
 
 
@@ -502,6 +518,21 @@
     }
 
 
+    function handleMouseUp() {
+        var t =  new triangle(new vec3(0,10,0), new vec3(5,10,10), new vec3(10,10,0));
+        var r1 = new vec3(-5,0,5)
+        var r2 = new vec3(-5,1000,5)
+
+        //mat4.rotate(mvMatrix, degToRad(-pitch), [1, 0, 0]);
+        //mat4.rotate(mvMatrix, degToRad(-yaw), [0, 1, 0]);
+        //mat4.translate(mvMatrix, [-xPos, -yPos, -zPos]);
+
+        var intersection = ray_intersects_triangle(t, r1, r2);
+
+        alert(intersection);
+    }
+
+
 
     function webGLStart() {
         var canvas = document.getElementById("lesson10-canvas");
@@ -515,12 +546,7 @@
 
         document.onkeydown = handleKeyDown;
         document.onkeyup = handleKeyUp;
-
-        var t =  new triangle(new vec3(0,10,0), new vec3(5,10,10), new vec3(10,10,0));
-        var r1 = new vec3(-5,0,5)
-        var r2 = new vec3(-5,1000,5)
-
-        alert(ray_intersects_triangle(t, r1, r2, new vec3(0,0,0)))
+        document.onmouseup = handleMouseUp;
 
         tick();
     }
