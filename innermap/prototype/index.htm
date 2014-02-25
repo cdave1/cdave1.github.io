@@ -372,24 +372,26 @@
 
 
     function triangle(a, b, c) {
-        this.values = [a, b, c];
+        this.vertices = [a, b, c];
     }
 
 
     triangle.prototype.triangle = function (a, b, c) {
-        this.values = [a, b, c];
+        this.vertices = [a, b, c];
     };
 
 
     // Adapted from algorithm 6 from softsurfer.com
     function ray_intersects_triangle(triangle, ray_start, ray_end, vout)
     {
-        var u = triangle[2].minus(triangle[0]);
-        var v = triangle[1].minus(triangle[0]);
+        var vertices = triangle.vertices;
+
+        var u = vertices[2].minus(vertices[0]);
+        var v = vertices[1].minus(vertices[0]);
         var n = cross(u, v);
 
         var dir = ray_end.minus(ray_start);
-        var w0 = ray_start.minus(triangle[0]);
+        var w0 = ray_start.minus(vertices[0]);
 
         var a = -dot(n, w0)
         var b = dot(n, dir)
@@ -410,7 +412,7 @@
         var uv = dot(u, v);
         var vv = dot(v, v);
 
-        var w = vOut.minus(triangle[0]);
+        var w = vOut.minus(vertices[0]);
         var wu = dot(w, u);
         var wv = dot(w, v);
 
