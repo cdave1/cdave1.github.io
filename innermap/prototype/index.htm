@@ -524,12 +524,11 @@
                           zPos)
 
         var out = ""
-        vertexCount = 4;
-        for (var i = 0; i < vertexCount - 2; i += 1) {
-            var pos = i*3;
-            var a = new vec3(verts[pos],   verts[pos],   verts[pos]);
-            var b = new vec3(verts[pos+1], verts[pos+1], verts[pos+1]);
-            var c = new vec3(verts[pos+2], verts[pos+2], verts[pos+2]);
+        vertexCount = 18;
+        for (var i = 0; i < vertexCount - 9; i += 9) {
+            var a = new vec3(verts[pos],   verts[pos+1], verts[pos+2]);
+            var b = new vec3(verts[pos+3], verts[pos+4], verts[pos+5]);
+            var c = new vec3(verts[pos+6], verts[pos+7], verts[pos+8]);
 
             out += a.values + ", " + b.values + ", " + c.values + ". "
 
