@@ -405,7 +405,7 @@
         var r = a / b;
         if (r < 0.0) return false;
         
-        dir = dot(dot, r);
+        dir = dot(dir, r);
         vOut = ray_start.add(dir);
         
         var uu = dot(u, u);
