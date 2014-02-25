@@ -372,9 +372,9 @@
 
 
     vec3.prototype.mult = function(rhs) {
-        return new vec3(this.values[0] + rhs,
-                        this.values[1] + rhs,
-                        this.values[2] + rhs);
+        return new vec3(this.values[0] * rhs,
+                        this.values[1] * rhs,
+                        this.values[2] * rhs);
     };
 
 
