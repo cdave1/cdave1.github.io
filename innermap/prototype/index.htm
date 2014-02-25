@@ -523,14 +523,10 @@
                           yPos + (1000 * (Math.sin(degToRad(-yaw)))), 
                           zPos)
 
-        var out = ""
         for (var i = 0; i < vertexCount - 9; i += 9) {
             var a = new vec3(verts[i],   verts[i+1], verts[i+2]);
             var b = new vec3(verts[i+3], verts[i+4], verts[i+5]);
             var c = new vec3(verts[i+6], verts[i+7], verts[i+8]);
-
-            out += a.values + ", " + b.values + ", " + c.values + ". "
-
 
             var t =  new triangle(a, b, c);
 
@@ -539,19 +535,6 @@
                 alert(intersection.values);
             }
         }
-        alert(out)
-
-        //var whatever = document.getElementById("whatever");
-        //whatever.innerHTML = out
-        
-
-        //mat4.rotate(mvMatrix, degToRad(-pitch), [1, 0, 0]);
-        //mat4.rotate(mvMatrix, degToRad(-yaw), [0, 1, 0]);
-        //mat4.translate(mvMatrix, [-xPos, -yPos, -zPos]);
-
-        //var intersection = ray_intersects_triangle(t, r1, r2);
-
-        
     }
 
 
