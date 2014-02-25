@@ -384,12 +384,12 @@
     // Adapted from algorithm 6 from softsurfer.com
     function ray_intersects_triangle(triangle, ray_start, ray_end, vout)
     {
-        var u = triangle[2].diff(triangle[0]);
-        var v = triangle[1].diff(triangle[0]);
+        var u = triangle[2].minus(triangle[0]);
+        var v = triangle[1].minus(triangle[0]);
         var n = cross(u, v);
 
-        var dir = ray_end.diff(ray_start);
-        var w0 = ray_start.diff(triangle[0]);
+        var dir = ray_end.minus(ray_start);
+        var w0 = ray_start.minus(triangle[0]);
 
         var a = -dot(n, w0)
         var b = dot(n, dir)
