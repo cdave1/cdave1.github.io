@@ -519,7 +519,11 @@
     function handleMouseUp() {
         var verts = vertexPositions
         var r1 = new vec3(xPos, yPos, zPos)
-        var r2 = new vec3(xPos + 1, yPos + 2000, zPos)
+
+        var r2 = new vec3(xPos + (1000 * (Math.cos(degToRad(-yaw))), 
+                          yPos + (1000 * (Math.sin(degToRad(-yaw))), 
+                          zPos)
+
 
         for (var i = 0; i < vertexPositions - 2; i += 1) {
             var a = new vec3(verts[i][0],verts[i][1],verts[i][1]);
