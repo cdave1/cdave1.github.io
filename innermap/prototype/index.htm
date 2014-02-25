@@ -523,13 +523,13 @@
                           yPos + (1000 * (Math.sin(degToRad(-yaw)))), 
                           zPos)
 
-        alert(vertexCount)
+        vertexCount = 4;
         for (var i = 0; i < vertexCount - 2; i += 1) {
             var a = new vec3(verts[i][0],  verts[i][1],  verts[i][2]);
             var b = new vec3(verts[i+1][0],verts[i+1][1],verts[i+1][2]);
             var c = new vec3(verts[i+2][0],verts[i+2][1],verts[i+2][2]);
 
-            //alert([a.values, b.values, c.values])
+            alert([a.values, b.values, c.values])
 
 
             var t =  new triangle(a, b, c);
