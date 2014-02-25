@@ -371,6 +371,13 @@
     };
 
 
+    vec3.prototype.mult = function(rhs) {
+        return new vec3(this.values[0] + rhs,
+                        this.values[1] + rhs,
+                        this.values[2] + rhs);
+    };
+
+
     function triangle(a, b, c) {
         this.vertices = [a, b, c];
     }
