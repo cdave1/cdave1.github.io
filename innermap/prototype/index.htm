@@ -402,7 +402,7 @@
         // [object Object],[object Object],NaN,NaN,NaN,[object Object],[object Object],NaN,NaN
         alert([u, v, n, dir, w0, a, b]);
         
-        if (Math.abs(b) < 0.0000001)
+        if (isNaN(b) || Math.abs(b) < 0.0000001)
         {
             return false;
         }
