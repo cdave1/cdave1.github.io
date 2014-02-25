@@ -526,9 +526,9 @@
         var out = ""
         vertexCount = 18;
         for (var i = 0; i < vertexCount - 9; i += 9) {
-            var a = new vec3(verts[pos],   verts[pos+1], verts[pos+2]);
-            var b = new vec3(verts[pos+3], verts[pos+4], verts[pos+5]);
-            var c = new vec3(verts[pos+6], verts[pos+7], verts[pos+8]);
+            var a = new vec3(verts[i],   verts[i+1], verts[i+2]);
+            var b = new vec3(verts[i+3], verts[i+4], verts[i+5]);
+            var c = new vec3(verts[i+6], verts[i+7], verts[i+8]);
 
             out += a.values + ", " + b.values + ", " + c.values + ". "
 
