@@ -380,9 +380,9 @@
 
 
     vec3.prototype.equals = function(rhs) {
-        return (this.values[0] == rhs
-                && this.values[1] == rhs
-                && this.values[2] == rhs);
+        return (this.values[0] == rhs.values[0]
+                && this.values[1] == rhs.values[1]
+                && this.values[2] == rhs.values[2]);
     };
 
 
