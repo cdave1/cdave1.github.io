@@ -411,10 +411,6 @@
 
         var a = -dot(n, w0)
         var b = dot(n, dir)
-
-        // [10,0,0],
-        // [5,0,10],NaN,NaN,NaN,0,1000,0,5,-10,5,NaN,NaN
-        alert([[u.values], [v.values], [n.values], [dir.values], [w0.values], a, b]);
         
         if (isNaN(b) || Math.abs(b) < 0.0000001)
         {
@@ -529,7 +525,7 @@
 
         var intersection = ray_intersects_triangle(t, r1, r2);
 
-        alert(intersection);
+        alert(intersection.values);
     }
 
 
