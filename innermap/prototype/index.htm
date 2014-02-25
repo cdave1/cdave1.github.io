@@ -524,7 +524,6 @@
                           zPos)
 
         var out = ""
-        vertexCount = 18;
         for (var i = 0; i < vertexCount - 9; i += 9) {
             var a = new vec3(verts[i],   verts[i+1], verts[i+2]);
             var b = new vec3(verts[i+3], verts[i+4], verts[i+5]);
@@ -543,7 +542,7 @@
         alert(out)
 
         var whatever = document.getElementById("whatever");
-        whatever.innerHtml = out
+        whatever.innerHTML = out
         
 
         //mat4.rotate(mvMatrix, degToRad(-pitch), [1, 0, 0]);
