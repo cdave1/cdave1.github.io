@@ -1,4 +1,23 @@
-name: David Petrie
-pygments: true
 safe: true
 lsi: false
+
+# Dependencies
+highlighter:      pygments
+
+# Permalinks
+#permalink:        pretty
+#relative_permalinks: true
+
+# Setup
+title:            David Petrie
+tagline:          'Home page'
+description:      'Engineer and entrepreneur from New Zealand, currently working in the SF Bay Area'
+url:              http://www.davidpetrie.com
+baseurl:          /
+
+author:
+  name:           'David Petrie'
+  url:            https://twitter.com/davidcpetrie
+
+# Custom vars
+version:          2.1.0
